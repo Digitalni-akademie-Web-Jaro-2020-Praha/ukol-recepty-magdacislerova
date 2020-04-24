@@ -25,7 +25,6 @@ notebook/pc:
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
-  max-width: 479px;
 }
 
 .paticka {
@@ -54,7 +53,7 @@ h1 {
   margin: 0;
 }
 
-h2 {
+.recept h1 {
   font-family: "Raleway";
   color: white;
   font-size: 18px;
@@ -72,17 +71,17 @@ p {
   color: white;
 }
 
-.vpravo {
+.zarazeni {
   float: right;
   margin: 0;
 }
 
-.vlevo {
+.komentare {
   float: left;
   margin: 0;
 }
 
-#hlavnirecept {
+.hlavni_recept {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(images/burger.jpg);
   background-repeat: no-repeat;
@@ -130,4 +129,88 @@ p {
   position: relative;
 }
 
+/*tablety*/
+
+@media (min-width: 480px) {
+
+h1 {
+    font-size: 36px;
+    bottom: 20px;
+    left: 20px;
+}
+
+.recept h1 {
+    font-size: 22px;
+    bottom: 20px;
+    left: 20px;
+
+}
+.main {
+    display: flex;
+}
+
+.hlavni_recept {
+    min-height: 250px;
+    padding: 20px;
+}
+
+.sloupec {
+    display: flex;
+}
+
+.recept {
+    width: 50%;
+    min-height: 150px;
+    padding: 20px;
+}
+
+#recept2, 
+#recept4 {
+    border-right: 2px solid white;
+}
+}
+
+@media (min-width: 860px) {
+
+h1 {
+       font-size: 48px;
+   }
+
+   .recepty h1 {
+       font-size: 28px;
+   }
+
+   .hlavni_recept {
+       min-height: 400px;
+       width: 33.3%;
+       border-right: 2px solid white;
+   }
+
+   .recept {
+       min-height: 200px;
+   }
+
+   main {
+       display: flex;
+       flex-wrap: wrap;
+   }
+
+   .male_recepty {
+       width: 66.6%;
+   }
+
+   .sloupec {
+       display: flex;
+   }
+
+   .recept {
+       width: 50%;
+   }
+
+   #recept2,
+   #recept3 {
+       border-top: none;
+   }
+
+   }
 
