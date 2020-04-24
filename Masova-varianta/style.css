@@ -1,7 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
-
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 
 /* -------------------------------------------------- */
 
@@ -17,24 +22,112 @@ notebook/pc:
 }
 */
 
-
 body {
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  max-width: 479px;
 }
 
 .paticka {
-    text-align: center;
-    font-size: 14px;
-    color: silver;
+  text-align: center;
+  font-size: 14px;
+  color: silver;
 }
 
 .paticka a {
-    color: silver;
+  color: silver;
 }
-
 
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
+
+h1 {
+  font-family: "Raleway";
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  text-align: left;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Raleway";
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: left;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+
+.vpravo {
+  float: right;
+  margin: 0;
+}
+
+.vlevo {
+  float: left;
+  margin: 0;
+}
+
+#hlavnirecept {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/burger.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  padding: 10px;
+  position: relative;
+}
+
+#recept2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/sushi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 2px solid white;
+}
+
+#recept3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/kure.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 2px solid white;
+}
+
+#recept4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/rajcata.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 2px solid white;
+}
+
+#recept5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/grilovani.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 2px solid white;
+}
+
+.recept {
+  min-height: 90px;
+  padding: 10px;
+  position: relative;
+}
+
 
